@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم الامن السيبراني واختبار الاختراق مع الخبير عمر جوده</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(45deg, #2E8B57, #228B22); /* تدرج خلفية باللون الأخضر الداكن والفاتح */
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #006400; /* خلفية باللون الأخضر الداكن */
+            padding: 30px;
+            color: white;
+            border-bottom: 5px solid #228B22; /* إضافة خط سفلي بلون أخضر فاتح */
+        }
+
+        header h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة ظل للنص */
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #006400;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav button {
+            background-color: #228B22; /* لون الزر الأخضر الفاتح */
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background-color: #2E8B57; /* تغيير اللون عند التمرير إلى الأخضر الداكن */
+        }
+
+        section {
+            padding: 25px;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.1); /* لون خلفية شفاف قليلاً */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2, section h3 {
+            color: #FFD700; /* اللون الذهبي للعناوين */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* إضافة ظل خفيف للعناوين */
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #32CD32; /* اللون الأخضر لزر الإعجاب */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #28a745;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            background-color: #006400; /* خلفية الفوتر */
+            padding: 20px;
+        }
+
+        #comments textarea {
+            width: 300px;
+            height: 100px;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        #comments button {
+            margin-top: 10px;
+            background-color: #228B22;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #comments button:hover {
+            background-color: #006400;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366; /* اللون الأخضر المميز لواتساب */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .whatsapp-button i {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .programmer-name {
+            color: #FFD700; /* اللون الذهبي */
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* تأثير ظل للنص */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>تعلم الامن السيبراني واختبار الاختراق مع الخبير <span class="programmer-name">Programmer Omar Goda</span></h1>
+    </header>
+
+    <nav>
+        <button onclick="scrollToSection('cybersecurity')">الامن السيبراني</button>
+        <button onclick="scrollToSection('cyberattacks')">الهجمات المستخدمة</button>
+        <button onclick="scrollToSection('gettingStarted')">كيفية البدء</button>
+        <button onclick="scrollToSection('tools')">أدوات الأمن السيبراني</button>
+        <button onclick="scrollToSection('languages')">اللغات المستخدمة</button>
+        <button onclick="scrollToSection('future')">التوجهات المستقبلية</button>
+    </nav>
+
+    <section id="cybersecurity">
+        <h2>مفهوم الامن السيبراني</h2>
+        <p>الأمن السيبراني هو حماية الأنظمة والشبكات والبرامج من الهجمات الرقمية. يهدف إلى حماية البيانات من التلف، السرقة أو الفقدان. يشمل أيضًا الوقاية من التهديدات السيبرانية مثل الفيروسات، الفدية، البرمجيات الخبيثة.</p>
+        <h3>أهداف الامن السيبراني</h3>
+        <ul>
+            <li>حماية البيانات الشخصية والمؤسسية.</li>
+            <li>تأمين الشبكات والمعدات من الهجمات.</li>
+            <li>استعادة الأنظمة بعد وقوع الحوادث الأمنية.</li>
+        </ul>
+    </section>
+
+    <section id="cyberattacks">
+        <h2>الهجمات المستخدمة في الامن السيبراني</h2>
+        <p>تعتمد الهجمات السيبرانية على استراتيجيات متعددة للتسلل إلى الأنظمة واستغلال الثغرات. بعض من الهجمات الأكثر شيوعًا تشمل:</p>
+        <ul>
+            <li><b>هجوم DDoS</b>: تعطيل الخدمة عن طريق إرسال كميات كبيرة من البيانات.</li>
+            <li><b>SQL Injection</b>: استغلال الثغرات في قواعد البيانات لسرقة البيانات أو تعديلها.</li>
+            <li><b>الهجوم بالبرمجيات الخبيثة</b>: مثل الفيروسات وبرامج الفدية.</li>
+        </ul>
+    </section>
+
+    <section id="gettingStarted">
+        <h2>كيفية البدء في الامن السيبراني</h2>
+        <p>لبدء تعلم الأمن السيبراني، يجب أن تكون لديك فكرة عامة عن:</p>
+        <ul>
+            <li>الشبكات وأنواعها (LAN، WAN، VPN).</li>
+            <li>أنواع البيانات وكيفية حمايتها.</li>
+            <li>البروتوكولات الأمنية مثل SSL/TLS.</li>
+        </ul>
+        <p>ثم يمكنك التوسع في تعلم الأدوات والبرمجيات المستخدمة في فحص الثغرات الأمنية.</p>
+    </section>
+
+    <section id="tools">
+        <h2>أدوات الأمن السيبراني</h2>
+        <p>هناك العديد من الأدوات التي يستخدمها محترفو الأمن السيبراني في فحص الأنظمة واختبارها:</p>
+        <ul>
+            <li><b>Wireshark</b>: هي أداة لتحليل الشبكات وفحص حركة البيانات. يمكن استخدامها للكشف عن الأنشطة غير القانونية التي تحدث داخل الشبكة، مثل محاولات الهجوم أو تسريب البيانات.</li>
+            <li><b>Kali Linux</b>: هو نظام تشغيل يحتوي على العديد من أدوات اختبار الاختراق المتخصصة في تحليل الثغرات في الشبكات والتطبيقات.</li>
+            <li><b>Metasploit</b>: أداة لاختبار اختراق الأنظمة وكشف الثغرات الأمنية، حيث تتيح للمختصين في الأمن السيبراني اختبار أمان النظام باستخدام أدوات هجومية.</li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>اللغات المستخدمة في الأمن السيبراني</h2>
+        <p>هناك العديد من اللغات البرمجية التي تعتبر أساسية للعمل في مجال الأمن السيبراني، مثل:</p>
+        <ul>
+            <li><b>Python</b>: تعتبر من اللغات الأكثر شهرة في الأمن السيبراني بسبب قدرتها الكبيرة على أتمتة المهام، وتحليل البيانات، وإنشاء أدوات لاختبار الثغرات.</li>
+            <li><b>JavaScript</b>: تستخدم بشكل أساسي في فحص تطبيقات الويب وحماية المواقع من الهجمات مثل XSS (Cross-Site Scripting) و CSRF (Cross-Site Request Forgery).</li>
+            <li><b>Ruby</b>: تُستخدم في أدوات اختبار الاختراق مثل Metasploit، وهي مثالية لكتابة برمجيات وأدوات لاختبار الثغرات.</li>
+        </ul>
+
+        <h3>مثال: استخدام Python لفحص الثغرات</h3>
+        <pre><code>import requests
+url = "http://example.com"
+response = requests.get(url)
+if "vulnerable" in response.text:
+    print("This site is vulnerable!")
+else:
+    print("This site is secure.") </code></pre>
+    </section>
+
+    <section id="future">
+        <h2>التوجهات المستقبلية في الأمن السيبراني</h2>
+        <p>مع تطور التكنولوجيا، يتزايد تهديد الأمن السيبراني. من التوجهات المستقبلية المهمة في هذا المجال:</p>
+        <ul>
+            <li>تعزيز الأمان في الذكاء الاصطناعي والتعلم الآلي.</li>
+            <li>أمن الحوسبة السحابية وحماية البيانات عبر الإنترنت.</li>
+            <li>تطوير تقنيات التشفير المتقدمة لمنع الوصول غير المصرح به.</li>
+        </ul>
+    </section>
+
+    <section id="questions">
+        <h2>اختبار: اجب على الأسئلة التالية</h2>
+        <form id="quizForm">
+            <label for="question1">ما هو الهدف الرئيسي من الامن السيبراني؟</label>
+            <input type="text" id="question1" name="question1" required><br><br>
+
+            <label for="question2">ما هي الهجمات السيبرانية الأكثر شيوعاً؟</label>
+            <input type="text" id="question2" name="question2" required><br><br>
+
+            <button type="button" onclick="submitQuiz()">إرسال الإجابات</button>
+        </form>
+    </section>
+
+    <footer>
+        <button onclick="likePage()">أعجبني</button>
+        <div id="comments">
+            <textarea id="comment" placeholder="اكتب تعليقك هنا..."></textarea>
+            <button onclick="submitComment()">إرسال تعليق</button>
+        </div>
+
+        <a href="https://wa.me/01143517616" class="whatsapp-button" target="_blank">
+            <span>إرسال عبر واتساب</span>
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function likePage() {
+            alert("شكراً على إعجابك بالصفحة!");
+        }
+
+        function submitComment() {
+            const comment = document.getElementById('comment').value;
+            if (comment) {
+                alert("تم إرسال تعليقك!");
+            } else {
+                alert("الرجاء كتابة تعليق قبل الإرسال.");
+            }
+        }
+
+        function submitQuiz() {
+            const answer1 = document.getElementById('question1').value;
+            const answer2 = document.getElementById('question2').value;
+            if (answer1 && answer2) {
+                alert("تم إرسال إجاباتك!");
+                window.location.href = "https://wa.me/01143517616?text=" + encodeURIComponent("الإجابات: " + answer1 + ", " + answer2);
+            } else {
+                alert("الرجاء الإجابة على جميع الأسئلة.");
+            }
+        }
+    </script>
+
+</body>
+</html>
